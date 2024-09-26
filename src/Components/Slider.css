@@ -1,0 +1,66 @@
+/* Slider.css */
+
+/* Main container holding the static background and carousel text */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 500px;  /* Adjust the height as needed */
+    overflow: hidden;
+  }
+  
+  /* Static background image */
+  .carousel-bg-image {
+    /* background-image: url('path_to_your_background_image');   */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  /* The carousel text content */
+  .carousel-content {
+    position: relative;
+    z-index: 2;  /* Ensure the text is above the background */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Text box styling */
+  .carousel-text {
+    text-align: center;
+     /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .carousel-text h3 {
+    font-size: 2.1rem;
+    margin-bottom: 10px;
+    
+  }
+  
+  .carousel-text p {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .carousel-text .author {
+    font-size: 0.85rem;
+    font-style: italic;
+    margin-top: 10px;
+  }
+  
+  .quote-icon {
+    font-size: 3.2355rem;
+    margin-bottom: 15px;
+    color: #000;
+  }
+  

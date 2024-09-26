@@ -1,0 +1,34 @@
+.bmi-head{
+    background: url(https://healthfirst.qodeinteractive.com/wp-content/uploads/2021/03/calculate-bmi.jpg) no-repeat  ;
+    height: 318px;
+    width: 114%;
+    margin-left: -80px;
+    
+  
+    
+    background-size:contain;
+    
+}
+.container-f{
+    max-width: 100vw;
+    overflow-x: hidden;
+    height: auto;
+   
+}
+
+@media (max-width: 576px) {
+    .bmi-head {
+      margin: 0 !important; /* Remove margin for small screens */
+    }
+  
+
+  }
+
+  /* BmiCalculator.css */
+.table {
+    width: 100%;
+  }
+  .alert {
+    padding: 15px;
+    margin-top: 20px;
+  }

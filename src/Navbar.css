@@ -1,0 +1,127 @@
+.bg-color{
+    background: #FEFDF8;
+    padding-top: 10px;
+ 
+
+}
+.bg-color .container {
+    max-width: 1250px;
+}
+
+
+/* General navbar styles */
+
+  
+  /* Style for navbar brand (logo) */
+  .navbar-brand h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    padding-top: 9px;
+
+  }
+  
+  .navbar-nav .nav-item {
+    position: relative;
+    margin: 0 18px; 
+    font-size: 1.1rem;
+
+    color: #333; 
+    display: inline-block;
+  }
+
+  
+  /* Zigzag underline effect */
+  .navbar-nav .nav-item::after {
+    text-align: center;
+    content: "~~~~~~~";
+    position: absolute;
+    font-weight: lighter !important;
+    width: 100%;
+color:black;
+    height: 3px;
+    bottom: 14px !important; 
+    left: 0;
+   /* right:-16; */
+    background-size: 10px 10px; 
+    background-repeat: repeat-x;
+    transform-origin: left;
+    transform: scaleX(0); 
+    transition: transform 0.3s linear;
+   
+  }
+  .hh::after{
+    content: "~~~~~~"!important;
+  
+  }
+  
+  .navbar-nav .nav-item:hover::after {
+    transform: scaleX(1); 
+    text-align: center;
+  }
+
+/* Style for hover dropdown */
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar .dropdown-menu {
+  display: none;
+  margin-top: 0;
+}
+
+/* Align dropdown with other nav items */
+.navbar .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar .drp {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  color: inherit; /* Ensure it inherits the same color as the other nav links */
+}
+
+
+
+
+.navbar .dropdown-menu {
+  padding: 0.7rem 0; /* Consistent padding inside dropdown items */
+}
+
+
+
+
+
+  
+ 
+.btn {
+    background-color: #050505;
+    padding: 12px 20px;
+    color: #fff;
+    margin-right: 20px;
+   font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 2px dashed #0b0c0c;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .4s;
+   }
+   
+   .btn span:last-child {
+    display: none;
+   }
+   
+   .btn:hover {
+    transition: .4s;
+    border: 2px dashed #0a0a0a;
+    background-color: #fff;
+    color: #030303;
+   }
+   
+   .btn:active {
+    background-color: #030303;
+   }
+   
+   
