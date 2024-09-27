@@ -9,6 +9,7 @@
 }
 
 
+
 /* General navbar styles */
 
   
@@ -50,6 +51,13 @@ color:black;
     transition: transform 0.3s linear;
    
   }
+
+  .service::after {
+    content: " " !important;
+
+  }
+
+
   .hh::after{
     content: "~~~~~~"!important;
   
@@ -123,5 +131,17 @@ color:black;
    .btn:active {
     background-color: #030303;
    }
-   
+   @media (max-width: 820px) {
+    .btn{
+        
+        margin-top: 20px;
+       
+    }
+    .contact-btn{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+    }
+  }
    

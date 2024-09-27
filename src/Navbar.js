@@ -14,8 +14,8 @@ const CustomNavbar = () => {
             <button
               className="navbar-toggler"
               type="button"
-              data-toggle="collapse"
-              data-target="#navbarNavAltMarkup"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
               aria-controls="navbarNavAltMarkup"
               aria-expanded="false"
               aria-label="Toggle navigation"
@@ -26,7 +26,7 @@ const CustomNavbar = () => {
               className="collapse navbar-collapse justify-content-between"
               id="navbarNavAltMarkup"
             >
-              <div className="navbar-nav text-center  fw-bold ">
+              <div className="navbar-nav text-center fw-bold">
                 <Link className="nav-item nav-link active hh" to="/">
                   Home <span className="sr-only">(current)</span>
                 </Link>
@@ -38,9 +38,9 @@ const CustomNavbar = () => {
                 </Link>
 
                 {/* Services Dropdown */}
-                <div className="nav-item dropdown">
+                <div className="nav-item service dropdown">
                   <Link
-                    className="nav-link drp"
+                    className="nav-link dropdown-toggle drp"
                     to="#"
                     id="servicesDropdown"
                     role="button"
@@ -49,10 +49,7 @@ const CustomNavbar = () => {
                   >
                     Services
                   </Link>
-                  <ul
-                    className="dropdown-menu"
-                    aria-labelledby="servicesDropdown"
-                  >
+                  <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
                     <li>
                       <Link className="dropdown-item" to="/our-team">
                         Our Team
@@ -66,7 +63,7 @@ const CustomNavbar = () => {
                   </ul>
                 </div>
               </div>
-              <Link to="/contact">
+              <Link to="/contact" className='contact-btn'>
                 <button className="btn">Contact Us</button>
               </Link>
             </div>

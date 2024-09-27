@@ -1,5 +1,6 @@
 import React from 'react'
 import './About.css'
+import { Link } from 'react-router-dom'
 
 
 const FooterQutes = () => {
@@ -22,8 +23,11 @@ const FooterQutes = () => {
     <p className='pb-3'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
 
 
+<Link to="/contact">
 
-    <button type="button" className="btn btn-lg  btn-dark mb-4">Contact-Us</button>
+<button type="button" className="btn btn-lg  btn-dark mb-4">Contact-Us</button>
+</Link>
+
 
 
     </div>
