@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Contact.css';
 import emailjs from 'emailjs-com'; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'; // Import FontAwesome icons
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -48,7 +50,7 @@ const Contact = () => {
                 <div className="row">
                   {/* First Name and Email */}
                   <div className="col-md-6 contactus-form-group mb-3">
-                    <label htmlFor="first_name" className="contactus-label form-label">First Name*</label> {/* Changed to first_name */}
+                    <label htmlFor="first_name" className="contactus-label form-label">First Name*</label>
                     <input
                       type="text"
                       className="contactus-input form-control"
@@ -88,7 +90,7 @@ const Contact = () => {
                     />
                   </div>
                   <div className="col-md-6 contactus-form-group mb-3">
-                    <label htmlFor="inquiry_type" className="contactus-label form-label">Inquiry Type*</label> {/* Changed to inquiry_type */}
+                    <label htmlFor="inquiry_type" className="contactus-label form-label">Inquiry Type*</label>
                     <select
                       className="contactus-select form-select contactus-input"
                       id="inquiry_type"
@@ -128,6 +130,18 @@ const Contact = () => {
           </div>
         </div>
       </div>
+
+      {/* WhatsApp Icon */}
+      <a 
+      href="https://wa.me/917521812155?text=Hello%20there%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." 
+      className="whatsapp_float"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FontAwesomeIcon icon={faWhatsapp} className="whatsapp-icon" />
+    </a>
+    
+    
     </div>
   );
 };
