@@ -128,7 +128,7 @@ const Footer = () => {
               <hr />
               <p className="text-center text-white">
                 &copy; 2024 All Rights Reserved{" "}
-                <span className="text-warning">NutriHealth</span>
+                <span className="text-warning">NutriHealth </span> 
                 Developed By <span className="text-warning">Mitisha Softech Pvt. Ltd.</span>
               </p>
             </div>
